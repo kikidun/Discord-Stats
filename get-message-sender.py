@@ -4,7 +4,7 @@ import json
 file = open("api-key","r")
 if file.mode == 'r':
     token = file.read()
-    apitoken = str(token)
+    apitoken = str(token).rstrip()
 
 disc = discord.Client()
 message_count = {}
